@@ -237,3 +237,84 @@ Now `DataManager` is **flexible** — you can use MySQL, MongoDB, etc.
 
 ## How tight coupling varied in each of them?
 
+
+**Coupling** is *very related* to concepts like composition vs inheritance — especially when you're trying to build clean, maintainable code. 💡
+
+---
+
+### 🔗 What is Coupling in OOP?
+
+**Coupling** refers to how **tightly connected** different parts (classes/modules) of your code are.
+
+- **Tight Coupling** = Classes are heavily dependent on each other’s internal details. Changes in one often force changes in another.
+- **Loose Coupling** = Classes interact through clear interfaces or contracts, not implementation details. Changes are easier to manage.
+
+---
+
+### 🤝 Coupling & Composition vs Inheritance
+
+Let’s compare:
+
+#### ❌ Inheritance can create **tight coupling**
+When `class B extends class A`, B is **strongly tied** to A's implementation.
+If you change `A`, you may have to rewrite `B`.
+
+```java
+class Vehicle {
+    void startEngine() { ... }
+}
+
+class Train extends Vehicle {
+    // throws error inside startEngine(): violation!
+}
+```
+
+Now `Train` is **tightly coupled** to `Vehicle`. But what if trains work totally differently? Then you get broken logic or bad hacks (like throwing exceptions in inherited methods 😬).
+
+---
+
+#### ✅ Composition encourages **loose coupling**
+Using **interfaces and composition**, you design flexible code where components can be swapped out.
+
+```java
+interface FarePolicy {
+    double computeFare(Ride ride);
+}
+
+class Driver {
+    FarePolicy policy;
+
+    Driver(FarePolicy policy) {
+        this.policy = policy;
+    }
+
+    double calculateFare(Ride ride) {
+        return policy.computeFare(ride);
+    }
+}
+```
+
+Now `Driver` doesn’t care how the fare is calculated — it just trusts the policy object to do its job. That’s **loose coupling** 🔥.
+
+---
+
+### ✅ Benefits of Loose Coupling via Composition
+
+- ✅ Easier to test (you can mock `FarePolicy`)
+- ✅ Easier to change behavior (just pass a new object)
+- ✅ Easier to reuse code (policies are independent)
+- ✅ Fewer bugs when changing existing logic
+
+---
+
+### 💡 Summary
+
+| Concept        | Inheritance         | Composition          |
+|----------------|---------------------|-----------------------|
+| Coupling Type | Tight Coupling       | Loose Coupling        |
+| Flexibility    | Hard to change       | Easy to swap behaviors |
+| Extensibility | Can be rigid         | Highly extensible     |
+
+---
+
+
