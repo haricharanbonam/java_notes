@@ -235,3 +235,5 @@ Now `DataManager` is **flexible** — you can use MySQL, MongoDB, etc.
 
 ---
 
+## How tight coupling varied in each of them?
+
