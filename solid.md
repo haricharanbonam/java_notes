@@ -322,7 +322,9 @@ single responsibility
 -testable
 -maintainable
 solid is part of low level desgin
-srp and ocp seems kind of similar in implementtion but different in the goal
+## srp and ocp seems kind of similar in implementtion but different in the goal 
+    - srp means simply diving the entire ZooClass into subclasses
+    -ocp goal is to provde the flexibility in future may be the code needes to be extnded
 
 
 y multiple inherir cant support in java just like py,cpp
