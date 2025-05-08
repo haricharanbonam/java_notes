@@ -317,4 +317,9 @@ Now `Driver` doesn’t care how the fare is calculated — it just trusts the po
 
 ---
 
+single responsibility
+-readale
+-testable
+-maintainable
+
 
