@@ -321,5 +321,8 @@ single responsibility
 -readale
 -testable
 -maintainable
+solid is part of low level desgin
+srp and ocp seems kind of similar in implementtion but different in the goal
 
 
+y multiple inherir cant support in java just like py,cpp
