@@ -326,3 +326,4 @@ srp and ocp seems kind of similar in implementtion but different in the goal
 
 
 y multiple inherir cant support in java just like py,cpp
+what is builder pat in java,py ?
