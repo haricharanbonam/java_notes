@@ -36,3 +36,40 @@ public class Ex {
     }
 }
 ```
+
+
+```java
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+
+
+public class Ex {
+    public static void main(String[] args) {
+        Comparator<String> comp = new Comparator<String>()
+        {
+            public int compare(String i,String j)
+            {
+                return i.length()>j.length() ? 1:-1;
+            }
+        };
+        List<String> nums = new ArrayList<>();
+        nums.add("hari");
+        nums.add("wth");
+        nums.add("charan");
+        nums.add("hi");
+        nums.add("charan");
+        nums.add("hi");
+        System.err.println(nums );
+        java.util.Collections.sort(nums,comp);
+
+        System.err.println(nums );
+    }
+}
+
+
+
+
+```
