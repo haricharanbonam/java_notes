@@ -73,3 +73,36 @@ public class Ex {
 
 
 ```
+```java
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+
+
+public class Ex {
+    public static void main(String[] args) {
+        //it is a functional interface so,
+        Comparator<String> comp =(String i,String j)->
+            {
+                return i.length()>j.length() ? 1:-1;
+            };
+        List<String> nums = new ArrayList<>();
+        nums.add("hari");
+        nums.add("wth");
+        nums.add("charan");
+        nums.add("hi");
+        nums.add("charan");
+        nums.add("hi");
+        System.out.println(nums );
+        java.util.Collections.sort(nums,comp);
+        System.out.println(nums );
+
+    }
+}
+
+
+
+
+```
