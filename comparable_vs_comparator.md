@@ -106,3 +106,59 @@ public class Ex {
 
 
 ```
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+class Student implements  Comparable<Student>{
+    String name;
+    int age;
+
+    public Student(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+    @Override
+    public int compareTo(Student that) {
+        if(that.age>this.age)
+        {
+            return -1;
+        }
+        else
+        {
+            return 1;
+        }
+
+    }
+
+
+}
+
+public class Ex {
+    public static void main(String[] args) {
+        List<Student> s = new ArrayList<>();
+        s.add(new Student(19, "hari"));
+        s.add(new Student(90, "charan"));
+        s.add(new Student(64, "pikachu"));
+        s.add(new Student(57, "charmander"));
+        s.add(new Student(89, "iron man"));
+        for(Student st: s)
+        {
+            System.out.print(st.age+" ");
+        }
+        java.util.Collections.sort(s);
+        System.out.println("");
+        for(Student st: s)
+        {
+            System.out.print(st.age+ " ");
+        }
+
+
+    }
+}
+
+
+
+
+```
