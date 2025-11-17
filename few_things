@@ -1,0 +1,15 @@
+You can also use:
+
+return new int[]{};  for sending an empty array
+
+
+1️⃣ Declaring an array directly with values
+int[] arr = new int[]{10, 20, 30};
+
+
+Equivalent to:
+
+int[] arr = {10, 20, 30};
+
+2️⃣ Passing an array directly to a function
+printArray(new int[]{1, 2, 3});
