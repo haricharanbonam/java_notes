@@ -132,3 +132,4 @@ If you want, I can create a compact note for you on:
 Just say *"continue"* 😄
 
 
+liskov sub principle basically tells us ki like wether that class honourable enough to be a sub class of that A 
