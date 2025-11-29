@@ -1,6 +1,6 @@
 # java_notes
 What is compositions , has -a 
-
+what is loose , tight in these interfaces , classes and stuff explain with example
 https://medium.com/all-about-chatgpt/one-prompt-that-instantly-makes-chatgpt-write-better-3108ab5b6431
 
 
@@ -133,3 +133,9 @@ Just say *"continue"* 😄
 
 
 liskov sub principle basically tells us ki like wether that class honourable enough to be a sub class of that A 
+dependency inversion , instead of creating the hard coded objects , we will send the supplied from the outside,Dependency Injection reduces tight coupling, increases reusability, and makes unit testing much easier.
+--------------few things couldnt understand--------------------------------------------------------------------
+The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. This allows the client to choose an algorithm at runtime, providing flexibility and the ability to change the algorithm's behavior without modifying the client code.
+
+----
+Interfaces are key to achieving the Dependency Inversion Principle (DIP) and the Interface Segregation Principle (ISP) in the SOLID principles. DIP suggests that high-level modules should not depend on low-level modules; both should depend on abstractions. Interfaces provide these abstractions. ISP suggests that clients should not be forced to depend on methods they do not use; interfaces allow you to define specific contracts for different clients.
