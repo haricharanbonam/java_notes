@@ -64,6 +64,7 @@ String joined = new String(arr); // "hello"
 
 * `split("")` → gives `String[]` → use `String.join()` to join.
 * `toCharArray()` → gives `char[]` → use `new String(arr)` to join.
+* Stringbuilder to String means we have to use ` Str_Name.toString()`.
 
 ---
 
