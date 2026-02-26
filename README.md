@@ -146,3 +146,4 @@ Interfaces are key to achieving the Dependency Inversion Principle (DIP) and the
  **Arrays.sort() with a Comparator does NOT work on primitive arrays**
  - not even this Arrays.sort(arr,Comparator.reverseOrder());
  - it should be Integer[] (wrapper class) to do so
+ - Not even descending gonna work cuz it only supports natural order
