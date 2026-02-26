@@ -139,3 +139,10 @@ The Strategy pattern defines a family of algorithms, encapsulates each one, and 
 
 ----
 Interfaces are key to achieving the Dependency Inversion Principle (DIP) and the Interface Segregation Principle (ISP) in the SOLID principles. DIP suggests that high-level modules should not depend on low-level modules; both should depend on abstractions. Interfaces provide these abstractions. ISP suggests that clients should not be forced to depend on methods they do not use; interfaces allow you to define specific contracts for different clients.
+<br/>
+<br/>
+<br/>
+
+ **Arrays.sort() with a Comparator does NOT work on primitive arrays**
+ - not even this Arrays.sort(arr,Comparator.reverseOrder());
+ - it should be Integer[] (wrapper class) to do so
