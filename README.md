@@ -133,7 +133,7 @@ Just say *"continue"* 😄
 
 
 liskov sub principle basically tells us ki like wether that class honourable enough to be a sub class of that A 
-dependency inversion , instead of creating the hard coded objects , we will send the supplied from the outside,Dependency Injection reduces tight coupling, increases reusability, and makes unit testing much easier.
+dependency inversion , instead of creating the hard coded objects , we will send the supplied from the outside,Dependency Injection reduces tight coupling, increases reusability, and makes unit testing much easier.i
 --------------few things couldnt understand--------------------------------------------------------------------
 The Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. This allows the client to choose an algorithm at runtime, providing flexibility and the ability to change the algorithm's behavior without modifying the client code.
 
@@ -147,3 +147,8 @@ Interfaces are key to achieving the Dependency Inversion Principle (DIP) and the
  - not even this Arrays.sort(arr,Comparator.reverseOrder());
  - it should be Integer[] (wrapper class) to do so
  - Not even descending gonna work cuz it only supports natural order
+<br/>
+<br/>
+<br/>
+- if u didnt use any constructor the compiler automatically provides a default no-argument constructor.
+- if u define any constructor If you are writing your own constructor, you are taking full control of object creation. u are not gonna  be having default one anymore
