@@ -152,3 +152,8 @@ Interfaces are key to achieving the Dependency Inversion Principle (DIP) and the
 <br/>
 - if u didnt use any constructor the compiler automatically provides a default no-argument constructor.
 - if u define any constructor If you are writing your own constructor, you are taking full control of object creation. u are not gonna  be having default one anymore
+    // Create a string from index 0, with a length of 5
+        String greeting = new String(charArray, 0, 5); 
+        // Create a string from index 6, with a length of 5
+        String subject = new String(charArray, 6, 5); 
+
