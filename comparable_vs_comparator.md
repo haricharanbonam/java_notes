@@ -1,3 +1,5 @@
+### comparator is used in whem to be primitive values which uses compare() method
+### comparable is used when sorting claesses and has method compareTo()
 ```java
 import java.util.ArrayList;
 import java.util.Comparator;
