@@ -29,3 +29,17 @@ System.out.printf("%05d",5);
 
 // %0Nd: The 0 flag indicates that the number should be padded with zeros, and N specifies the total width of the output.
 //only works for zero
+
+String padded = String.format("%10s", "Java"); 
+// Output: "      Java" (Total length 10)
+
+
+String padded = String.format("%-10s", "Java"); 
+// Output: "Java      " (Total length 10)
+
+
+
+String padded = String.format("%10s", "Java").replace(' ', '0');
+System.out.println(padded); // 000000Java
+
+// i dont recommen d this cuz it is way easier to do the padding with **"0".repeat(mx-a.kength())**  than this 
