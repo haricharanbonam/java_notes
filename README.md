@@ -1,3 +1,5 @@
+# FEW LINKS
+- https://medium.com/@mohammedsafir17/java-memory-model-f59c458815e3
 # java_notes
 What is compositions , has -a 
 what is loose , tight in these interfaces , classes and stuff explain with example
